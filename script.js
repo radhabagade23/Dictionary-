@@ -20,7 +20,7 @@ searchBtn.addEventListener('click', async () => {
        .then((data) => {
            const meaning = data[0].meanings[0];
            const definition = meaning.definitions[0].definition;
-           result.innerHTML = `<h3>word: ${words}</h3>
+           result.innerHTML = `<h3>Word: ${words}</h3>
            <p><strong>Defination:</strong> ${definition}</p>
            <p><strong>Part of speech: </strong> ${meaning.partOfSpeech}</p>
            `;
